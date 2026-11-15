@@ -1,0 +1,19 @@
+{
+  "name": "snow-games",
+  "version": "10.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Arabic Discord party games: roulette, hide, mines, chairs and reverse roulette",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "test": "node --test",
+    "preview": "node scripts/preview.js",
+    "register": "node --env-file-if-exists=.env scripts/register.js",
+    "brand": "node --env-file-if-exists=.env scripts/brand.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "discord.js": "14.28.1"
+  }
+}
